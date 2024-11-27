@@ -1,0 +1,168 @@
+/* General Admin Panel Styles */
+.admin-panel {
+  text-align: center;
+  margin: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Admin Panel Header */
+.admin-panel h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #007bff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* Stat Card Styles */
+.stat {
+  background: linear-gradient(45deg, #28a745, #007bff);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 180px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.stat h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.stat p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Admin Options Section */
+.admin-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.card button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  width: 80%; /* Ensures buttons match the card width */
+}
+
+.card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .admin-panel {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat {
+    width: 200px;
+  }
+
+  .admin-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 280px;
+  }
+}
